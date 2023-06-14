@@ -8,9 +8,10 @@ export default function Home() {
   const [fontSize, setFontSize] = useState('4em'); // Initial font size
   const MAX_CHARACTERS = 17;
 
-  const handleButtonClick = (value) => {
-    setInput((prevInput) => prevInput + value);
-  };
+  const handleButtonClick = (value: number | string) => {
+  setInput((prevInput) => prevInput + value);
+};
+
   
 
   const handleClearClick = () => {

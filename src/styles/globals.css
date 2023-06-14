@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Raleway:ital,wght@0,400;0,500;1,300&display=swap');
+
+
+body {
+  background-color: #ffb703;
+  box-sizing: border-box;
+}
+
+#mCalc {
+  background-color: #219ebc;
+  box-sizing: border-box;
+  height: 38em;
+  margin-bottom: 10%; /* Adjust the margin value for equal space */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 27em;
+}
+
+
+#btn {
+  background-color: #023047;
+  box-sizing: border-box;
+  width: 22.2%;
+  height: 2.9em;
+  margin: 0.2em;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.6em;
+}
+
+#sCalc {
+  height: 10em;
+  width: 25em;
+  margin-top: 0.7em;
+  background-color: #8ecae6;
+  overflow: hidden;
+}
+
+#calc {
+  width: 25em;
+}
+
+h1#input {
+ color: black;
+ font-size: 4vw;
+top: 40%;
+left: 50%;
+transform: translate(-50%, -50%);
+position: relative;
+
+}
+

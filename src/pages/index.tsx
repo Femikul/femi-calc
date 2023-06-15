@@ -6,7 +6,7 @@ import math from 'mathjs';
 export default function Home() {
   const [input, setInput] = useState('');
   const [fontSize, setFontSize] = useState('4em'); // Initial font size
-  const MAX_CHARACTERS = 15;
+  const MAX_CHARACTERS = 14;
 
   const handleButtonClick = (value: number | string) => {
   setInput((prevInput) => prevInput + value);
@@ -30,7 +30,7 @@ export default function Home() {
 
   
   useEffect(() => {
-    if (input.length >= 10) {
+    if (input.length >= 9) {
       setFontSize('2.5em'); // Reduce font size once input reaches 11 characters
     } else {
       setFontSize('4em'); // Reset font size if input is less than 11 characters

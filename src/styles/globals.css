@@ -2,13 +2,13 @@
 
 
 body {
-  background-color: #ffb703;
+  background-color: #a3b18a;
   box-sizing: border-box;
   overflow: hidden;
 }
 
 #mCalc {
-  background-color: #219ebc;
+  background-color: #344e41;
   box-sizing: border-box;
   height: 38em;
   margin-bottom: 10%; /* Adjust the margin value for equal space */
@@ -22,7 +22,7 @@ body {
 
 
 #btn {
-  background-color: #023047;
+  background-color: #3a5a40;
   box-sizing: border-box;
   width: 22.2%;
   height: 2.9em;
@@ -32,15 +32,12 @@ body {
   font-size: 1.6em;
 }
 
-#btn:hover {
-background-color: #0A4860;
-}
 
 #sCalc {
   height: 10em;
   width: 25em;
   margin-top: 0.7em;
-  background-color: #8ecae6;
+  background-color: #588157;
   overflow: hidden;
 }
 

@@ -48,7 +48,6 @@ background-color: #0A4860;
 
 h1#input {
  color: black;
- font-size: 10em;
 top: 40%;
 left: 50%;
 transform: translate(-50%, -50%);
@@ -85,8 +84,3 @@ position: relative;
   }
 }
 
-@media (max-width: 800px) {
-  h1#input {
-    font-size: 1em;
-  }
-}

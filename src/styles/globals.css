@@ -17,6 +17,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 27em;
+  overflow: hidden;
 }
 
 
@@ -45,6 +46,7 @@ background-color: #0A4860;
 
 #calc {
   width: 25em;
+  overflow: hidden;
 }
 
 h1#input {

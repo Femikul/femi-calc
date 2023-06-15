@@ -9,8 +9,9 @@ export default function Home() {
   const MAX_CHARACTERS = 15;
 
   const handleButtonClick = (value: number | string) => {
-    setInput((prevInput) => prevInput + value);
-  };
+  setInput((prevInput) => prevInput + value);
+};
+
   
 
   const handleClearClick = () => {

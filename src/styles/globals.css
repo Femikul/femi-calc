@@ -30,6 +30,10 @@ body {
   font-size: 1.6em;
 }
 
+#btn:hover {
+background-color: #0A4860;
+}
+
 #sCalc {
   height: 10em;
   width: 25em;
@@ -44,7 +48,7 @@ body {
 
 h1#input {
  color: black;
- font-size: 4vw;
+ font-size: 10em;
 top: 40%;
 left: 50%;
 transform: translate(-50%, -50%);
@@ -52,3 +56,37 @@ position: relative;
 
 }
 
+@media (max-width: 800px) {
+  #mCalc {
+    width: 23em;
+    height: 33em;
+  }
+}
+
+@media (max-width: 800px) {
+  #sCalc {
+    width: 21em;
+    height: 9em;
+    margin-right: 3.5em;
+  }
+}
+
+@media (max-width: 800px) {
+  #calc {
+    width: 25em;
+    padding-right: 4.5em;
+  }
+}
+
+@media (max-width: 800px) {
+  #btn {
+    width: 21.8%;
+    height: 2.3em;
+  }
+}
+
+@media (max-width: 800px) {
+  h1#input {
+    font-size: 1em;
+  }
+}

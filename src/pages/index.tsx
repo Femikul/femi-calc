@@ -6,9 +6,9 @@ import math from 'mathjs';
 export default function Home() {
   const [input, setInput] = useState('');
   const [fontSize, setFontSize] = useState('4em'); // Initial font size
-  const MAX_CHARACTERS = 17;
+  const MAX_CHARACTERS = 15;
 
-  const handleButtonClick = (value) => {
+  const handleButtonClick = (value: number | string) => {
     setInput((prevInput) => prevInput + value);
   };
   
@@ -29,12 +29,13 @@ export default function Home() {
 
   
   useEffect(() => {
-    if (input.length >= 11) {
+    if (input.length >= 10) {
       setFontSize('2.5em'); // Reduce font size once input reaches 11 characters
     } else {
       setFontSize('4em'); // Reset font size if input is less than 11 characters
     }
   }, [input]);
+  
   
   return (
     <>
@@ -51,28 +52,28 @@ export default function Home() {
         <div className='w3-padding-8' id='calc'>
           <div className='w3-row' id='1'>
             <button
-              className='w3-button w3-padding-8 w3-round-large w3-ripple'
+              className='w3-btn w3-padding-8 w3-round-large w3-ripple'
               id='btn'
               onClick={handleClearClick}
             >
               C
             </button>
             <button
-              className='w3-button w3-padding-8 w3-round-large w3-ripple'
+              className='w3-btn w3-padding-8 w3-round-large w3-ripple'
               id='btn'
               onClick={() => handleButtonClick('+-')}
             >
               +-
             </button>
             <button
-              className='w3-button w3-padding-8 w3-round-large w3-ripple'
+              className='w3-btn w3-padding-8 w3-round-large w3-ripple'
               id='btn'
               onClick={() => handleButtonClick('%')}
             >
               %
             </button>
             <button
-              className='w3-button w3-padding-8 w3-round-large w3-ripple'
+              className='w3-btn w3-padding-8 w3-round-large w3-ripple'
               id='btn'
               onClick={() => handleButtonClick('/')}
             >
@@ -81,28 +82,28 @@ export default function Home() {
           </div>
           <div className='w3-row' id='2'>
             <button
-              className='w3-button w3-padding-8 w3-round-large w3-ripple'
+              className='w3-btn w3-padding-8 w3-round-large w3-ripple'
               id='btn'
               onClick={() => handleButtonClick('7')}
             >
               7
             </button>
             <button
-              className='w3-button w3-padding-8 w3-round-large w3-ripple'
+              className='w3-btn w3-padding-8 w3-round-large w3-ripple'
               id='btn'
               onClick={() => handleButtonClick('8')}
             >
               8
             </button>
             <button
-              className='w3-button w3-padding-8 w3-round-large w3-ripple'
+              className='w3-btn w3-padding-8 w3-round-large w3-ripple'
               id='btn'
               onClick={() => handleButtonClick('9')}
             >
               9
             </button>
             <button
-              className='w3-button w3-padding-8 w3-round-large w3-ripple'
+              className='w3-btn w3-padding-8 w3-round-large w3-ripple'
               id='btn'
               onClick={() => handleButtonClick('*')}
             >
@@ -111,28 +112,28 @@ export default function Home() {
           </div>
           <div className='w3-row' id='3'>
             <button
-              className='w3-button w3-padding-8 w3-round-large w3-ripple'
+              className='w3-btn w3-padding-8 w3-round-large w3-ripple'
               id='btn'
               onClick={() => handleButtonClick('4')}
             >
               4
             </button>
             <button
-              className='w3-button w3-padding-8 w3-round-large w3-ripple'
+              className='w3-btn w3-padding-8 w3-round-large w3-ripple'
               id='btn'
               onClick={() => handleButtonClick('5')}
             >
               5
             </button>
             <button
-              className='w3-button w3-padding-8 w3-round-large w3-ripple'
+              className='w3-btn w3-padding-8 w3-round-large w3-ripple'
               id='btn'
               onClick={() => handleButtonClick('6')}
             >
               6
             </button>
             <button
-              className='w3-button w3-padding-8 w3-round-large w3-ripple'
+              className='w3-btn w3-padding-8 w3-round-large w3-ripple'
               id='btn'
               onClick={() => handleButtonClick('-')}
             >
@@ -141,28 +142,28 @@ export default function Home() {
           </div>
           <div className='w3-row' id='4'>
             <button
-              className='w3-button w3-padding-8 w3-round-large w3-ripple'
+              className='w3-btn w3-padding-8 w3-round-large w3-ripple'
               id='btn'
               onClick={() => handleButtonClick('1')}
             >
               1
             </button>
             <button
-              className='w3-button w3-padding-8 w3-round-large w3-ripple'
+              className='w3-btn w3-padding-8 w3-round-large w3-ripple'
               id='btn'
               onClick={() => handleButtonClick('2')}
             >
               2
             </button>
             <button
-              className='w3-button w3-padding-8 w3-round-large w3-ripple'
+              className='w3-btn w3-padding-8 w3-round-large w3-ripple'
               id='btn'
               onClick={() => handleButtonClick('3')}
             >
               3
             </button>
             <button
-              className='w3-button w3-padding-8 w3-round-large w3-ripple'
+              className='w3-btn w3-padding-8 w3-round-large w3-ripple'
               id='btn'
               onClick={() => handleButtonClick('+')}
             >
@@ -171,21 +172,21 @@ export default function Home() {
           </div>
           <div className='w3-row' id='5'>
             <button
-              className='w3-button w3-padding-8 w3-round-large w3-ripple'
+              className='w3-btn w3-padding-8 w3-round-large w3-ripple'
               id='btn'
               onClick={() => handleButtonClick('0')}
             >
               0
             </button>
             <button
-              className='w3-button w3-padding-8 w3-round-large w3-ripple'
+              className='w3-btn w3-padding-8 w3-round-large w3-ripple'
               id='btn'
               onClick={() => handleButtonClick('.')}
             >
               .
             </button>
             <button
-              className='w3-button w3-padding-8 w3-round-large w3-ripple'
+              className='w3-btn w3-padding-8 w3-round-large w3-ripple'
               id='btn'
               style={{ width: '44.4%', backgroundColor: '#ff4800' }}
               onClick={handleEqualClick}

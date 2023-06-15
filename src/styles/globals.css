@@ -4,6 +4,7 @@
 body {
   background-color: #ffb703;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 #mCalc {

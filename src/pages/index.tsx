@@ -189,7 +189,7 @@ export default function Home() {
             <button
               className='w3-btn w3-padding-8 w3-round-large w3-ripple'
               id='btn'
-              style={{ width: '44.4%', backgroundColor: '#ff4800' }}
+              style={{ width: '44.4%', backgroundColor: '#66CDAA' }}
               onClick={handleEqualClick}
             >
               =

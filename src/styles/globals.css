@@ -2,12 +2,13 @@
 
 
 body {
-  background-color: #2F4F4F;
+  background-color: #a3b18a;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 #mCalc {
-  background-color: #008080;
+  background-color: #344e41;
   box-sizing: border-box;
   height: 38em;
   margin-bottom: 10%; /* Adjust the margin value for equal space */
@@ -16,11 +17,12 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 27em;
+  overflow: hidden;
 }
 
 
 #btn {
-  background-color: #008B8B;
+  background-color: #3a5a40;
   box-sizing: border-box;
   width: 22.2%;
   height: 2.9em;
@@ -30,20 +32,18 @@ body {
   font-size: 1.6em;
 }
 
-#btn:hover {
-background-color: ;
-}
 
 #sCalc {
   height: 10em;
   width: 25em;
   margin-top: 0.7em;
-  background-color: #E0FFFF;
+  background-color: #588157;
   overflow: hidden;
 }
 
 #calc {
   width: 25em;
+  overflow: hidden;
 }
 
 h1#input {

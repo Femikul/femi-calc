@@ -41,7 +41,7 @@ export default function Home() {
  
   return (
     <>
-    <Suspense fallBack={<Loading />}>
+    <Suspense fallback={<Loading />}>
       <Head>
         <title>Calculator App</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />

@@ -1,12 +1,13 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, Suspense } from 'react';
 import Head from 'next/head'
-import math from 'mathjs';
+import Loading from '../components/Loading';
 
 
 export default function Home() {
   const [input, setInput] = useState('');
   const [fontSize, setFontSize] = useState('4em'); // Initial font size
   const MAX_CHARACTERS = 14;
+
 
   const handleButtonClick = (value: number | string) => {
   setInput((prevInput) => prevInput + value);
@@ -37,9 +38,10 @@ export default function Home() {
     }
   }, [input]);
   
-  
+ 
   return (
     <>
+    <Suspense fallBack={<Loading />}>
       <Head>
         <title>Calculator App</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -197,6 +199,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      </Suspense>
     </>
   );
 }

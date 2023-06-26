@@ -4,8 +4,11 @@
 body {
   background-color: #a3b18a;
   box-sizing: border-box;
-  overflow: hidden;
+  overflow: auto;
+  font-family: 'Raleway', sans-serif;
+
 }
+
 
 #mCalc {
   background-color: #344e41;

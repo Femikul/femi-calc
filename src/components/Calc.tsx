@@ -49,6 +49,7 @@ import React, { useState, useEffect, Suspense, lazy } from 'react';
               className='w3-btn w3-padding-8 w3-round-large w3-ripple'
               id='btn'
               onClick={handleClearClick}
+              style={{ backgroundColor: '#ff6000' }}
             >
               C
             </button>
@@ -182,7 +183,7 @@ import React, { useState, useEffect, Suspense, lazy } from 'react';
             <button
               className='w3-btn w3-padding-8 w3-round-large w3-ripple'
               id='btn'
-              style={{ width: '44.4%', backgroundColor: '#adc178' }}
+              style={{ width: '45%', backgroundColor: '#ff6000' }}
               onClick={handleEqualClick}
             >
               =
